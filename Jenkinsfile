@@ -10,8 +10,6 @@ pipeline {
 	} // end clone
 
   } // end stages
-}//end pipeline
-
 
 stage('restore package') {
 		steps
@@ -20,3 +18,7 @@ stage('restore package') {
 			bat 'dotnet restore'
 		}
 	}
+
+}//end pipeline
+
+
