@@ -9,15 +9,17 @@ pipeline {
 		}
 	} // end clone
 
-  } // end stages
-
-stage('restore package') {
+	stage('restore package') {
 		steps
 		{
 			echo 'Restore package'
 			bat 'dotnet restore'
 		}
 	}
+
+  } // end stages
+
+
 
 }//end pipeline
 
