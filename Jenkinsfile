@@ -17,6 +17,15 @@ pipeline {
 		}
 	}
 
+	stage ('build') {
+		steps {
+			echo 'build project netcore'
+			bat 'dotnet build  --configuration Release'
+		}
+	}
+	
+
+
 	
 
   } // end stages
